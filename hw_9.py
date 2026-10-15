@@ -3,7 +3,7 @@ later than 2 weeks prior to departure for the exchange semester, provided that t
 to the International Academic Mobility Office (Volkhovsky per., 3, office 207, Tel.: +7 (812) 323 8447). A copy of the invitation letter from a host school - partner 
 of GSOM SPbU has to be attached to the application.'''
 
-l = text.find('(')
-r = text.find(', Tel.')
-res = text[l + 1 : r]
+left  = text.find('(') + 1
+right = text.find(', Tel.')
+res = text[left : right]
 print(f'Address:\n{res}')
